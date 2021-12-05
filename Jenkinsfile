@@ -11,6 +11,14 @@ stages
    { 
       steps {sh 'echo created-artifacts'}
     }
+ stage('create devlopment')
+ { 
+    steps{sh 'echo development'}
+ }
+ stage('create qa')
+ {
+     steps{sh 'echo qa'}
+ }
 
 }
 }
