@@ -21,7 +21,7 @@ stages
  }
  stage('create qa')
  {
-     steps{sh 'echo qa'}
+     steps{sh 'echo Deployed to QA environment'}
  }
 
 }
