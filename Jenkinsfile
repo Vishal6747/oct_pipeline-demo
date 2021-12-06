@@ -23,6 +23,10 @@ stages
  {
      steps{sh 'echo Deployed to QA environment.'}
  }
+ stage('trigger mail')
+ {
+    steps{sh 'echo trigger-mail.'}
+ }
 
 }
 }
