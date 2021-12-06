@@ -13,6 +13,10 @@ stages
     }
  stage('create devlopment')
  { 
+    steps{input 'please approve the pipeline for deployment'}
+ }
+ stage('get approval from QA manager')
+ { 
     steps{sh 'echo development'}
  }
  stage('create qa')
